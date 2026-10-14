@@ -1,0 +1,11 @@
+.git
+.env
+**/.env
+**/__pycache__
+**/*.pyc
+data
+dashboard
+airflow/logs
+airflow/config
+.venv
+venv

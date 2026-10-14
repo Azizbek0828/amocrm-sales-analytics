@@ -1,8 +1,9 @@
 import os
 import requests
+from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 SUBDOMAIN = os.getenv("AMO_SUBDOMAIN")
 TOKEN = os.getenv("AMO_TOKEN")
 

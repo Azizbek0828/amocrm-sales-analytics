@@ -14,3 +14,9 @@ venv/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Airflow runtime files; configuration templates stay in Git.
+airflow/logs/*
+!airflow/logs/.gitkeep
+airflow/config/*
+!airflow/config/.gitkeep

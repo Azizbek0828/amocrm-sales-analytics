@@ -4,9 +4,10 @@ import random
 from datetime import datetime, timedelta
 
 import requests
+from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 BASE_URL = f"https://{os.getenv('AMO_SUBDOMAIN')}.amocrm.ru/api/v4"
 HEADERS = {"Authorization": f"Bearer {os.getenv('AMO_TOKEN')}"}
 
